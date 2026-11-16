@@ -1,4 +1,4 @@
-# bp_megaphone
+# Free FiveM Megaphone Script
 
 A free megaphone for FiveM roleplay servers. Use the item and your character raises a megaphone: your voice gets a megaphone filter, carries further and comes through louder for everyone near you. On-duty police also get a menu of stock GTA police megaphone lines.
 
