@@ -2,21 +2,32 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 
-name 'jraxion_megaphone'
-version '1.0.2'
-description 'FiveM megaphone script by jraxion'
-author 'jraxion'
-url 'https://jraxion.tebex.io/'
+name 'bp_megaphone'
+version '1.1.0'
+bp_script 'bp_megaphone'
+description 'FiveM megaphone script'
+author 'BP Development'
+url 'https://tebex.bhavikp.in/'
 
+shared_scripts {
+    '@ox_lib/init.lua',
+    'config.lua',
+}
 
 client_scripts {
-    'config.lua',
-    'client/main.lua'
+    'client/main.lua',
 }
 
 server_scripts {
-    'config.lua',
+    'bp_versioncheck.lua',
     'server/main.lua',
 }
 
-dependency 'jraxion_lib'
+dependencies {
+    'ox_lib',
+    'bp_lib',
+}
+
+escrow_ignore {
+    'config.lua',
+}
